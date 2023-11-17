@@ -1,0 +1,38 @@
+{
+    "dieticians": [
+        {
+            "id": 1,
+            "name": "Dr. Olivia Nutritionista",
+            "image": "https://img.freepik.com/free-photo/smiling-nutritionist-her-office-she-is-showing-healthy-vegetables-fruits-healthcare-diet-concept-female-nutritionist-with-fruits-working-her-desk_657921-280.jpg?w=2000&t=st=1700166392~exp=1700166992~hmac=d09ece27e1b873d55ae297b474546b053febf07faf08d47b5797701eec4d7d0a",
+            "description": "Hello there! I'm Dr. Olivia, your dedicated nutrition expert. Let's embark on a journey towards a healthier, more vibrant you, one delicious meal at a time!",
+            "hourlyRate": "$30/Hour"
+    
+        },
+        {
+            "id": 2,
+            "name": "Dr. Marcus WellMaster",
+            "image": "https://img.freepik.com/free-photo/portrait-cheerful-physician-glasses-offering-ripe-apple_1262-12815.jpg?w=2000&t=st=1700167266~exp=1700167866~hmac=a657e2810cb25fac6c606ead477998f17b23b1636010bfb3982996ca140fa51a",
+            "description": "Greetings! I'm Chef Marcus, your culinary guide to a balanced and flavorful diet. Nourish your body but also delights your taste buds",
+            "hourlyRate": "$40/Hour"
+    
+        },
+        {
+            "id": 3,
+            "name": "Dr. James FitFuel",
+            "image": "https://img.freepik.com/free-photo/young-hispanic-dietitian-man-holding-doughnut-apple-smiling-looking-side-staring-away-thinking_839833-14017.jpg?w=2000&t=st=1700167437~exp=1700168037~hmac=250e5708ae32ec858361b449b986bcd410ca111e41cd47d96b48d5de8e1d4dca",
+            "description": "Hey, I'm James, your go-to nutrition guru. Right nutrients, achieve your fitness goals, and make healthy living a lifestyle, not a chore.",
+            "hourlyRate": "$25/Hour"
+    
+        },
+        {
+            "id": 4,
+            "name": "Dr. Emily NutriWellness",
+            "image": "https://img.freepik.com/free-photo/expressive-senior-woman-posing_344912-976.jpg?w=2000&t=st=1700167376~exp=1700167976~hmac=2efd91ddbfedc3bf26d22859cbd73ed975034da98e7349be97c303dbe14692ae",
+            "description": "Hi, I'm Dr. Emily, your nutrition companion. Let's navigate the world of wholesome eating, uncovering the secrets to a healthier lifestyle tailored just for you.",
+            "hourlyRate": "$35/Hour"
+    
+        }
+
+
+    ]
+}
