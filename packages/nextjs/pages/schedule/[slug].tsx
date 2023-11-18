@@ -53,14 +53,24 @@ const getTodayPlus3 = (): string => {
 };
 
 
+function convertDateToUnixTimestamp(year: number, month: number, day: number, hours: number = 0, minutes: number = 0, seconds: number = 0): number {
+    const date = new Date(year, month - 1, day, hours, minutes, seconds);
+    return Math.floor(date.getTime() / 1000);
+}
+
+// Example: Convert a specific date and time to Unix timestamp
+const unixTimestamp = convertDateToUnixTimestamp(2023, 11, 18, 12, 30, 0);
+console.log(unixTimestamp);
+
+
 export default function Schedule() {
 
     const { writeAsync, isLoading, isMining } = useScaffoldContractWrite({
         contractName: "YourContract",
         functionName: "bookDietician",
         args: [
-            "0xDbc69F3e6b305dcbFB3c7A61676A61DCA05B083A", 
-            String(1702849010)],
+            "0x00782e2e2F77aDCCeeBAD44607CFbF08f732223d", 
+            String(1729949130)],
         // For payable functions
         value: parseEther("0.3"),
         // The number of block confirmations to wait for before considering transaction to be confirmed (default : 1).
