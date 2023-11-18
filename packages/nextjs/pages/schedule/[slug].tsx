@@ -65,11 +65,12 @@ console.log(unixTimestamp);
 
 export default function Schedule() {
 
+
     const { writeAsync, isLoading, isMining } = useScaffoldContractWrite({
         contractName: "YourContract",
         functionName: "bookDietician",
         args: [
-            "0x00782e2e2F77aDCCeeBAD44607CFbF08f732223d", 
+            "0x00782e2e2F77aDCCeeBAD44607CFbF08f732223d",
             String(1729949130)],
         // For payable functions
         value: parseEther("0.3"),
@@ -77,16 +78,16 @@ export default function Schedule() {
         blockConfirmations: 1,
         // The callback function to execute when the transaction is confirmed.
         onBlockConfirmation: txnReceipt => {
-          console.log("Transaction blockHash", txnReceipt.blockHash);
+            console.log("Transaction blockHash", txnReceipt.blockHash);
         },
-      });
+    });
 
     const [dateOption, setDateOption] = useState()
     const [timeOption, setTimeOption] = useState("09:00 CET");
     const [result, setResult] = useState(false);
-    const route = useRouter(); 
+    const route = useRouter();
 
-    
+
 
     const onDateOptionChange = (e: any) => {
         setDateOption(e.target.value);
@@ -124,39 +125,29 @@ export default function Schedule() {
                             <p className="py-6"> Eat Smart, Live well. You are about to confirm your spot with <b>{dietician?.name}</b> at <b>{timeOption}</b> on <b>{dateOption}</b>. Check your booking details before staking!</p>
                         </div>
                         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                            <form className="card-body">
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text font-bold">Address</span>
-                                    </label>
-                                    <label className="label">
-                                        <span className="label-text">0x145F569B9D46F509286a66e4597FC5cC2Ec0fdE4</span>
-                                    </label>
 
 
-                                    
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text font-bold">Amount</span>
-                                    </label>
-                                    <label className="label">
-                                        <span className="label-text">{dietician?.hourlyRate}</span>
-                                    </label>
+                            <label className="label">
+                                <span className="label-text font-bold">Address</span>
+                            </label>
+                            <label className="label">
+                                <span className="label-text">0x145F569B9D46F509286a66e4597FC5cC2Ec0fdE4</span>
+                            </label>
 
+                            <label className="label">
+                                <span className="label-text font-bold">Amount</span>
+                            </label>
+                            <label className="label">
+                                <span className="label-text">{dietician?.hourlyRate}</span>
+                            </label>
 
+                            <div className="form-control mt-6">
+                                <button onClick={() => writeAsync()} className="btn btn-primary">Stake</button>
+                            </div>
 
-                
-
-                                </div>
-                                <div className="form-control mt-6">
-                                    <button onClick={() => writeAsync()} className="btn btn-primary">Stake</button>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
-
 
             </div>
 
@@ -174,7 +165,6 @@ export default function Schedule() {
                             <input type="radio" name="date" className="radio radio-success" value={getTomorrowDate()} onChange={onDateOptionChange} /> {getTomorrowDate()}
                             <input type="radio" name="date" className="radio radio-success" value={getTodayPlus2()} onChange={onDateOptionChange} /> {getTodayPlus2()}
                             <input type="radio" name="date" className="radio radio-success" value={getTodayPlus3()} onChange={onDateOptionChange} /> {getTodayPlus3()}
-
 
 
                             <div className="md:py-8 py-5 md:px-16 px-15 dark:bg-gray-700 bg-gray-50 rounded-b">

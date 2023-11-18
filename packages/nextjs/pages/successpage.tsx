@@ -8,10 +8,8 @@ import { useRouter } from "next/router";
 
 
 export default function SuccessPage() {
-    const [dieticianAddress, setDieticianAddress] = useState("0x00782e2e2F77aDCCeeBAD44607CFbF08f732223d");
-    const [paymentAmount, setPaymentAmount] = useState("0.3");
+   
     const route = useRouter();
-
     const dietician = begum.dieticians.filter((data) => { return (data.id.toString() == route.query.slug); }).at(0);
 
 
@@ -24,8 +22,9 @@ export default function SuccessPage() {
                         <h1 className="text-5xl font-bold">Spot Confirmed!</h1>
                         <p className="py-6">  
                         <br />You confirmed your spot with <b>{dietician?.name}</b> at <b>"09:00 CET"</b> on <b>tomorrow</b>. 
-                        <br />Check your booking details before staking!</p>
-                        <p className="py-6"> </p>
+                        
+                        
+                       
                     </div>
                     
                 </div>

@@ -1,0 +1,31 @@
+{
+    "cobuddies": [
+        {
+            "id": 1,
+            "name": "DietBuddy made healthy living a breeze!",
+            "image": "https://img.freepik.com/free-vector/five-stars-rating-button-experience-reviews_8829-2624.jpg?w=2000&t=st=1700224472~exp=1700225072~hmac=18959ea933adc3a8194964a1c590846f267ed821db73196d747f3ea973601842",
+            "description": "The personalized guidance from my dietician and the supportive community kept me on track. It's more than an app; it's a lifestyle changer!"
+            
+    
+        },
+        {
+            "id": 2,
+            "name": "Thanks to DietBuddy, I found a sustainable way to eat well without sacrificing taste.",
+            "image": "https://img.freepik.com/free-vector/five-stars-rating-button-experience-reviews_8829-2624.jpg?w=2000&t=st=1700224472~exp=1700225072~hmac=18959ea933adc3a8194964a1c590846f267ed821db73196d747f3ea973601842",
+            "description": "The quick access to expert advice and the friendly interactions with other users made my journey enjoyable and effective!"
+            
+    
+        },
+        {
+            "id": 3,
+            "name": "DietBuddy is my go-to for nutritional support.",
+            "image": "https://img.freepik.com/free-vector/five-stars-rating-button-experience-reviews_8829-2624.jpg?w=2000&t=st=1700224472~exp=1700225072~hmac=18959ea933adc3a8194964a1c590846f267ed821db73196d747f3ea973601842",
+            "description": "The app's simplicity, combined with the wisdom from my dietician, turned my health goals into achievable milestones. Highly recommend it for anyone serious about their well-being!"
+           
+    
+        }
+        
+
+
+    ]
+}
