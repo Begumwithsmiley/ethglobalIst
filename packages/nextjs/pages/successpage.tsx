@@ -20,13 +20,8 @@ export default function SuccessPage() {
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Spot Confirmed!</h1>
-                        <p className="py-6">  
                         <br />You confirmed your spot with <b>{dietician?.name}</b> at <b>"09:00 CET"</b> on <b>tomorrow</b>. 
-                        
-                        
-                       
                     </div>
-                    
                 </div>
             </div>
         </div>
