@@ -84,9 +84,9 @@ export default function Schedule() {
     const [dateOption, setDateOption] = useState()
     const [timeOption, setTimeOption] = useState("09:00 CET");
     const [result, setResult] = useState(false);
-    const route = useRouter();
+    const route = useRouter(); 
 
-
+    
 
     const onDateOptionChange = (e: any) => {
         setDateOption(e.target.value);
@@ -127,7 +127,7 @@ export default function Schedule() {
                             <form className="card-body">
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text">Address</span>
+                                        <span className="label-text font-bold">Address</span>
                                     </label>
                                     <label className="label">
                                         <span className="label-text">0x145F569B9D46F509286a66e4597FC5cC2Ec0fdE4</span>
@@ -138,7 +138,7 @@ export default function Schedule() {
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text">Amount</span>
+                                        <span className="label-text font-bold">Amount</span>
                                     </label>
                                     <label className="label">
                                         <span className="label-text">{dietician?.hourlyRate}</span>
