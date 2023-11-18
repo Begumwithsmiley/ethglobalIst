@@ -81,8 +81,8 @@ export default function Schedule() {
         },
       });
 
-    const [dateOption, setDateOption] = useState(getCurrentDate())
-    const [timeOption, setTimeOption] = useState("09:00 CET");
+    const [dateOption, setDateOption] = useState()
+    const [timeOption, setTimeOption] = useState();
     const [result, setResult] = useState(false);
     const route = useRouter();
 
@@ -97,9 +97,15 @@ export default function Schedule() {
     }
 
     const displayRadioValue = () => {
-        console.log(dateOption, "DATE");
-        console.log(timeOption, "TIME");
-        setResult(true);
+
+        if (!dateOption || !timeOption) {
+            alert("Please choose date and time");
+        }
+        else {
+            console.log(dateOption, "DATE");
+            console.log(timeOption, "TIME");
+            setResult(true);
+        }
     }
 
 
