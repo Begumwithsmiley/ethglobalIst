@@ -7,13 +7,23 @@ import "hardhat/console.sol";
 // Use openzeppelin to inherit battle-tested implementations (ERC20, ERC721, etc)
 // import "@openzeppelin/contracts/access/Ownable.sol";
 
-/**
- * A smart contract that allows changing a state variable of the contract and tracking the changes
- * It also allows the owner to withdraw the Ether in the contract
- * @author BuidlGuidl
- */
 contract YourContract {
 	// State Variables
+    mapping (address => uint256) public dieticianBalance;
+    mapping (address => uint256) public dieticianRate;
+    mapping (address =>uint256) public studentLessonDate;
+
+    function setDieticianRate(uint256 _amount) public{
+        dieticianRate[msg.sender] = _amount;
+    }
+
+    function bookDietician(address _dietician, uint256 timestamp) payable public {
+        require(msg.value >= dieticianRate[_dietician], "You need to send more, it's less than the rate");
+        studentLessonDate[msg.sender] = timestamp;
+        dieticianBalance[_dietician] += dieticianRate[_dietician];
+    }
+
+
 	address public immutable owner;
 	string public greeting = "Building Unstoppable Apps!!!";
 	bool public premium = false;

@@ -1,8 +1,10 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { parseEther } from "viem";
 import { MetaHeader } from "~~/components/MetaHeader";
 
 import begum from "~~/components/dietician.json";
+import { useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
 
 
 const getCurrentDate = (): string => {
@@ -52,6 +54,22 @@ const getTodayPlus3 = (): string => {
 
 
 export default function Schedule() {
+
+    const { writeAsync, isLoading, isMining } = useScaffoldContractWrite({
+        contractName: "YourContract",
+        functionName: "bookDietician",
+        args: [
+            "0xDbc69F3e6b305dcbFB3c7A61676A61DCA05B083A", 
+            String(1702849010)],
+        // For payable functions
+        value: parseEther("0.3"),
+        // The number of block confirmations to wait for before considering transaction to be confirmed (default : 1).
+        blockConfirmations: 1,
+        // The callback function to execute when the transaction is confirmed.
+        onBlockConfirmation: txnReceipt => {
+          console.log("Transaction blockHash", txnReceipt.blockHash);
+        },
+      });
 
     const [dateOption, setDateOption] = useState(getCurrentDate())
     const [timeOption, setTimeOption] = useState("09:00 CET");
@@ -116,7 +134,7 @@ export default function Schedule() {
 
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn btn-primary">Stake</button>
+                                    <button onClick={() => writeAsync()} className="btn btn-primary">Stake</button>
                                 </div>
                             </form>
                         </div>
