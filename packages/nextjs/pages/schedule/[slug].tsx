@@ -82,7 +82,7 @@ export default function Schedule() {
       });
 
     const [dateOption, setDateOption] = useState()
-    const [timeOption, setTimeOption] = useState();
+    const [timeOption, setTimeOption] = useState("09:00 CET");
     const [result, setResult] = useState(false);
     const route = useRouter();
 

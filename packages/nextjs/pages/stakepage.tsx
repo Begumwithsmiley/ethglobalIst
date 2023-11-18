@@ -52,7 +52,7 @@ export default function Stake() {
                                 </label>
                                 <input type="text" className="input input-bordered" value={dieticianAddress} required disabled />
                             </div>
-                            <div className="form-control">
+                           // <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Amount</span>
                                 </label>
