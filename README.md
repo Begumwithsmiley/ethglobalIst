@@ -1,3 +1,13 @@
+# Deployed Contracts
+Account: 0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8
+- Linea Testnet: [0x3c76557F67f1c493Ea0c7BA36554157B987Af775](https://explorer.goerli.linea.build/address/0x3c76557F67f1c493Ea0c7BA36554157B987Af775)
+- Scroll Sepolia: [0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8](https://sepolia.scrollscan.dev/address/0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8)
+- Arbitrium Sepolia: [0x3c76557f67f1c493ea0c7ba36554157b987af775](https://sepolia.arbiscan.io/address/0x3c76557f67f1c493ea0c7ba36554157b987af775)
+- Chiliz Spicy: [0x3c76557F67f1c493Ea0c7BA36554157B987Af775](https://spicy-explorer.chiliz.com/address/0x3c76557F67f1c493Ea0c7BA36554157B987Af775)
+- Mantle Testnet [0x3c76557F67f1c493Ea0c7BA36554157B987Af775](https://explorer.testnet.mantle.xyz/address/0x3c76557F67f1c493Ea0c7BA36554157B987Af775)
+---
+
+
 # 🏗 Scaffold-ETH 2
 
 🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.

@@ -62,6 +62,10 @@ const config: HardhatUserConfig = {
       url: `https://arb-goerli.g.alchemy.com/v2/${providerApiKey}`,
       accounts: [deployerPrivateKey],
     },
+    arbitrumSepolia: {
+      url: `https://arb-sepolia.g.alchemy.com/v2/${providerApiKey}`,
+      accounts: [deployerPrivateKey],
+    },
     optimism: {
       url: `https://opt-mainnet.g.alchemy.com/v2/${providerApiKey}`,
       accounts: [deployerPrivateKey],
@@ -122,6 +126,27 @@ const config: HardhatUserConfig = {
       url: "https://rpc.scroll.io",
       accounts: [deployerPrivateKey],
     },
+    // TODO: fix the keys
+    lineaTestnet: {
+      url: `https://linea-goerli.infura.io/v3/45cb05f851444a51bfd995aef63494d9`,
+      accounts: [deployerPrivateKey],
+    },
+    linea: {
+      url: `https://linea-mainnet.infura.io/v3/45cb05f851444a51bfd995aef63494d9`,
+      accounts: [deployerPrivateKey],
+    },
+    chilizSpicy: {
+      url: `https://spicy-rpc.chiliz.com/`,
+      accounts: [deployerPrivateKey],
+    },
+    mantle: {
+      url: "https://rpc.mantle.xyz",
+      accounts: [deployerPrivateKey],
+    },
+    mantleTest: {
+      url: "https://rpc.testnet.mantle.xyz",
+      accounts: [deployerPrivateKey],
+    }
   },
   verify: {
     etherscan: {
