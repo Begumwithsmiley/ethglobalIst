@@ -1,10 +1,15 @@
 # Deployed Contracts
 Account: 0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8
 - Linea Testnet: [0x3c76557F67f1c493Ea0c7BA36554157B987Af775](https://explorer.goerli.linea.build/address/0x3c76557F67f1c493Ea0c7BA36554157B987Af775)
-- Scroll Sepolia: [0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8](https://sepolia.scrollscan.dev/address/0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8)
+- Scroll Sepolia: [0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8](https://sepolia.scrollscan.dev/address/0xBD1a70F605bB1Af2da36f0d118c0B395Cb2Dd9c8) * 
 - Arbitrium Sepolia: [0x3c76557f67f1c493ea0c7ba36554157b987af775](https://sepolia.arbiscan.io/address/0x3c76557f67f1c493ea0c7ba36554157b987af775)
 - Chiliz Spicy: [0x3c76557F67f1c493Ea0c7BA36554157B987Af775](https://spicy-explorer.chiliz.com/address/0x3c76557F67f1c493Ea0c7BA36554157B987Af775)
 - Mantle Testnet [0x3c76557F67f1c493Ea0c7BA36554157B987Af775](https://explorer.testnet.mantle.xyz/address/0x3c76557F67f1c493Ea0c7BA36554157B987Af775)
+
+We're unable to verify the *Scroll Sepolia* contract  with the Scaffold-ETH2 boilerplate because it returns an error because of not using etherscan(we assume it's because of not supported yet). _Network with chainId: 534351 not supported. You can specify the url manually via --api-url <url>._ and
+<img width="773" alt="image" src="https://github.com/Begumwithsmiley/ethglobalIst/assets/5622253/145d2309-8322-433d-a2dd-2f1426cc3949">
+
+
 ---
 
 
